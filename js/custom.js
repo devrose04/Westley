@@ -70,7 +70,7 @@ $(document).ready(function () {
       nav: true,
       margin: 0,
       autoplay: true,
-      autoplayTimeout: 2000,
+      autoplayTimeout: 8000,
       autoplayHoverPause: false,
       responsive: {
          0: {
@@ -79,25 +79,12 @@ $(document).ready(function () {
       }
    });
 
-
-   // PORTFOLIO SECTION
-   var mixer = mixitup('#portfolio');
-   $(".indicator > span").click(function () {
-      $(".indicator > span").removeClass("active");
-      $(this).addClass("active");
-   });
-
-
-
-   // $('#portfolio').magnificPopup({
-   //    type:'image',
-   //    delegate: ".img-box > a",
-   //    gallery: { enabled: true }
-   // });
-
-
-
-
+    // PORTFOLIO SECTION
+    var mixer = mixitup('#portfolio');
+    $(".indicator > span").click(function() {
+       $(".indicator > span").removeClass("active");
+       $(this).addClass("active");
+    });
 
    var owl2 = $('#testimonialSection .owl-carousel');
    owl2.owlCarousel({
@@ -117,31 +104,6 @@ $(document).ready(function () {
          }
       }
    });
-
-
-
-   // var owl3 = $('#specialFeature .owl-carousel');
-   // owl3.owlCarousel({
-   //    animateOut: 'fadeOut',
-   //    loop:true,
-   //    nav:false,
-   //    margin: 30,
-   //    autoplay:true,
-   //    autoplayTimeout:3000,
-   //    autoplayHoverPause:true,
-   //    responsive:{
-   //       0: {
-   //          items:1
-   //       },
-   //       768: {
-   //          items:2
-   //       },
-   //       1024: {
-   //          items:3
-   //       }
-   //    }
-   // });
-
 
 
    var wow = new WOW({
