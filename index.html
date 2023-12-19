@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="shortcut icon" href="img/logo.jpg">
+   <link rel="shortcut icon" href="img/logo-1.png">
    <!-- GOOGLE FONTS CDN LINK -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link
@@ -23,6 +23,7 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/portfolio.css">
    <link rel="stylesheet" href="css/custom.css">
+   <link rel="stylesheet" href="css/aisection.css">
    <link rel="stylesheet" href="css/preloader.css">
    <title>The Westley Group</title>
 </head>
@@ -67,34 +68,33 @@
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
          <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
-         <a class="logo" href="#">The Westley Group</a>
+         <a class="logo" href="#">The Westley Services</a>
          <div class="sidenav">
             <div class="header">
-               <a class="logo d-lg-none" href="#">The Westley Group</a>
+               <a class="logo d-lg-none" href="#">The Westley Services</a>
                <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
             </div>
             <ul class="mb-0">
                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link" href="#">About </a>
+               <li class="nav-item">
+                  <a class="nav-link" href="#aboutSection">About </a>
                </li>
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="">Services <i class="fal fa-angle-down"></i></a>
                   <div id="menu2" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#serviceSection"><span>Web Development</span></a>
                      <a class="dropdown-item" href="#aiSection"><span>AI Technology</span></a>
                      <a class="dropdown-item" href="#blockchainSection"><span>Blockchain Technology</span></a>
                      <a class="dropdown-item" href="#serviceSection"><span>Digital Marketing</span></a>
+                     <a class="dropdown-item" href="#serviceSection"><span>Web Development</span></a>
                   </div>
                </li>
-               <li class="nav-item dropdown">
-                  <a class="nav-link" data-toggle="collapse" href="#portfolioSection">Products <i
-                        class="fal fa-angle-down"></i></a>
-                  <div id="menu2" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#portfolioSection"><span>Website Development</span></a>
-                     <a class="dropdown-item" href="#portfolioSection"><span>AI Development</span></a>
+               <li class="nav-item">
+                  <a class="nav-link" href="#portfolioSection">Products</a>
+                  <!-- <div id="menu2" class="dropdown-menus collapse"> -->
+                  <!-- <a class="dropdown-item" href="#portfolioSection"><span>AI Development</span></a>
                      <a class="dropdown-item" href="#portfolioSection"><span>MARKETING</span></a>
-                  </div>
+                     <a class="dropdown-item" href="#portfolioSection"><span>Web Development</span></a> -->
+                  <!-- </div> -->
                </li>
                <li class="nav-item"><a class="nav-link" href="#contactArea">Contact Us</a></li>
             </ul>
@@ -111,9 +111,7 @@
    <!-- ======================================== HOME SECTION ======================================== -->
 
    <section id="homeSection">
-      <video autoplay muted loop playsinline preload="metadata" class="main-video">
-         <source src="./video/02.mp4" type="video/mp4">
-      </video>
+
       <div class="owl-carousel">
          <div class="slider-box slider-box1">
             <div class="overlay">
@@ -209,7 +207,7 @@
             <div class="row">
                <div class="section-head col-sm-12" id="service">
                   <h1 class="heading">OUR SERVICES</h1>
-               </div>              
+               </div>
                <div class="col-lg-6 col-sm-6">
                   <div class="item"> <span class="icon feature_box_col_two"></span>
                      <h6>AI Technology</h6>
@@ -264,8 +262,8 @@
 
    <!-- ======================================== AI SECTION ======================================== -->
    <section id="aiSection">
-      <div class="container">
 
+      <div class="container">
          <div class="section-head col-sm-12" id="AI">
             <h1 class="heading">AI Technology</h1>
          </div>
@@ -311,7 +309,7 @@
                   </video>
                </div>
                <div class="col-lg-4 col-sm-4">
-                  <h6>Robertic AI</h6>
+                  <h6>Robotic AI</h6>
                   <p>We develop and deploy autonomy at scale in vehicles, robots and more. We believe that an approach
                      based on advanced AI for vision and planning, supported by efficient use of inference hardware, is
                      the only way to achieve a general solution for full self-driving, bi-pedal robotics and beyond.
@@ -319,9 +317,9 @@
                </div>
             </div>
          </div>
-         <div class="col-lg-12 col-sm-12">
+         <div class="col-lg-12 col-sm-12 item-4">
             <div class="item"> <span class="icon feature_box_col_three"></span>
-               <h6>ANALYTICS</h6>
+               <h6>Computer Vision</h6>
                <p>We build and deploy better computer vision applications faster by abstracting and automating the
                   entire lifecycle with the all-in-one enterprise vision platform.​
                </p>
@@ -333,6 +331,7 @@
          </div>
       </div>
       </div>
+      <canvas id="canvas" class="canvas"></canvas>
    </section>
 
 
@@ -395,203 +394,27 @@
                <div class="indicator float-lg-right">
                   <span class="mixer active" data-filter="all">ALL</span>
                   <span class="mixer" data-filter=".ai">AI</span>
-                  <span class="mixer" data-filter=".marketing">MARKETING</span>
-                  <span class="mixer" data-filter=".property">Property Listings</span>
-                  <span class="mixer" data-filter=".web">WEBSITE</span>
+                  <span class="mixer" data-filter=".game">Game</span>
+                  <span class="mixer" data-filter=".blockchain">Blockchain</span>
+                  <span class="mixer" data-filter=".web">Website</span>
                </div>
             </div>
          </div>
          <div id="portfolio">
             <div class="row">
-               <div class="contain col-md-6 col-lg-4 mix marketing">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-1.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>Social Media</h1>
-                        <p>A social media management tool helps businesses schedule posts, engage with their audience,
-                           and analyze their social media performance.
-                        </p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix marketing">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-2.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>Email Marketing</h1>
-                        <p>Email marketing software enables businesses to create, execute, and manage email marketing
-                           campaigns.
-                        </p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix marketing">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-3.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>Influencer Marketing</h1>
-                        <p>An influencer marketing platform connects businesses with influencers to launch collaborative
-                           marketing campaigns.
-                        </p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix property">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-8.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>DreamHomeFinder</h1>
-                        <p>Find your dream home with our extensive property listing database featuring a wide range of
-                           options to suit your unique tastes and requirements.</p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix property">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-5.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>ListingMaximizer</h1>
-                        <p>Boost your property's visibility and reach a larger audience by listing it with our reliable
-                           and trusted property listing company.
-                           We ensure maximum exposure and connect you with potential buyers or renters.</p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix property">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-6.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>PortfolioPro</h1>
-                        <p>Let us assist you in managing your property portfolio effortlessly.
-                           Our comprehensive property listing services include expert guidance, efficient maintenance,
-                           and timely rent collection, ensuring a hassle-free experience for property owners.</p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix web">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-7.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>Uber Health</h1>
-                        <p>web app to help improve health outcomes and the patient, caregiver, and clinician experience
-                           by helping enable better access to care and services.</p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix web">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-4.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>Artios Pharma</h1>
-                        <p>Leading DNA Damage Response (DDR) company focused on developing first-in-class treatments for
-                           cancer.</p>
-                     </span>
-                  </div>
-               </div>
-               <div class="contain col-md-6 col-lg-4 mix web">
-                  <div class="contain-inner">
-                     <span class="front">
-                        <img src="./img/portfolio-9.png" class="img-fluid" alt="">
-                     </span>
-                     <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
-                        position: absolute;
-                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
-                              viewBox="0 0 640 512">
-                              <path fill="#ffffff"
-                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
-                        <h1>Stantec</h1>
-                        <p>website to help assisting their clients across the industry to shape and improve transitional
-                           and future energy projects.</p>
-                     </span>
-                  </div>
-               </div>
                <div class="contain col-md-6 col-lg-4 mix ai">
                   <div class="contain-inner">
                      <span class="front">
                         <img src="./img/portfolio-10.png" class="img-fluid" alt="">
                      </span>
                      <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
+                        <a href="" class="link" style=" top: 10%;
                         position: absolute;
                         right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
                               viewBox="0 0 640 512">
                               <path fill="#ffffff"
                                  d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
+                           </svg></a>
                         <h1>AI Resume Parser</h1>
                         <p>Our AI-powered resume parser leverages the capabilities of AI and ML to effortlessly
                            standardize and optimize their resumes, leading to increased visibility and success in the
@@ -606,13 +429,13 @@
                         <img src="./img/portfolio-11.png" class="img-fluid" alt="">
                      </span>
                      <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
+                        <a href="" class="link" style=" top: 10%;
                         position: absolute;
                         right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
                               viewBox="0 0 640 512">
                               <path fill="#ffffff"
                                  d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
+                           </svg></a>
                         <h1>Analytics Solution</h1>
                         <p>Data is ruling the world and we must utilize it to redefine experience, increase operational
                            efficiency, reduce cost, and optimize operations. Our data science consulting</p>
@@ -625,18 +448,199 @@
                         <img src="./img/portfolio-12.png" class="img-fluid" alt="">
                      </span>
                      <span class="back">
-                        <!-- <a href="" class="link" style=" top: 10%;
+                        <a href="" class="link" style=" top: 10%;
                         position: absolute;
                         right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
                               viewBox="0 0 640 512">
                               <path fill="#ffffff"
                                  d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
-                           </svg></a> -->
+                           </svg></a>
                         <h1>Generative AI</h1>
                         <p>Generative Artificial Intelligence in Fintech</p>
                      </span>
                   </div>
                </div>
+               <div class="contain col-md-6 col-lg-4 mix game">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-1.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://pokemongolive.com/?hl=en" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Pokemon Go</h1>
+                        <p>It utilizes augmented reality technology to bring the beloved world of Pokemon into the real
+                           world. In the game, players become Pokémon trainers and embark on an adventure to catch,
+                           train, and battle Pokemon creatures.
+                        </p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix game">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-2.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://www.echo.games/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Lone Echo</h1>
+                        <p>Lone Echo is an immersive virtual reality (VR) game that takes place in outer space. Players
+                           step into the role of an advanced android named Jack, who assists a human captain aboard a
+                           futuristic space station.
+                        </p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix game">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-3.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://en.wikipedia.org/wiki/Ingress_(video_game)" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Ingress</h1>
+                        <p>Ingress is a groundbreaking mobile game that combines elements of both augmented reality (AR)
+                           and virtual reality (VR). Set in a sci-fi world, players join one of two factions - the
+                           Enlightened or the Resistance - and engage in an intense battle for control over real-world
+                           landmarks and territories.
+                        </p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix blockchain">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-b1.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://www.everburn.io/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Everburn</h1>
+                        <p>Everburn is a Hyper-Deflationary reflection token, rapidly burning supply on every buy and
+                           sale. The burn process is percentage-based, so as supply diminishes, the burn rate slows
+                           down, and every holders' share percentage of the total supply increases.
+                        </p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix blockchain">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-b2.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://mercafantasy.com/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Colexion</h1>
+                        <p>Own prime NFT collection.
+                        </p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix blockchain">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-b3.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://mercafantasy.com/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Mercafantasy</h1>
+                        <p>Create, sell and collect digital items.
+                        </p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix web">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-7.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://www.overleaf.com/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Overleaf</h1>
+                        <p>A collaborative cloud-based LaTeX editor used for writing, editing and publishing scientific
+                           documents.</p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix web">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-4.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://www.artios.com/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Artios Pharma</h1>
+                        <p>Leading DNA Damage Response (DDR) company focused on developing first-in-class treatments for
+                           cancer.</p>
+                     </span>
+                  </div>
+               </div>
+               <div class="contain col-md-6 col-lg-4 mix web">
+                  <div class="contain-inner">
+                     <span class="front">
+                        <img src="./img/portfolio-9.png" class="img-fluid" alt="">
+                     </span>
+                     <span class="back">
+                        <a href="https://www.stantec.com/" class="link" style=" top: 10%;
+                        position: absolute;
+                        right: 10%;"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="45"
+                              viewBox="0 0 640 512">
+                              <path fill="#ffffff"
+                                 d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z" />
+                           </svg></a>
+                        <h1>Stantec</h1>
+                        <p>website to help assisting their clients across the industry to shape and improve transitional
+                           and future energy projects.</p>
+                     </span>
+                  </div>
+               </div>
+
             </div>
          </div>
       </div>
@@ -723,16 +727,17 @@
                            <img src="img/client-1.jpg" alt="">
                         </div>
                         <div class="txt">
-                           <p>SAMANTHA AKKINENI</p>
-                           <span>MANAGING DIRECTOR</span>
+                           <p>Manager</p>
+                           <span>Aveda</span>
                         </div>
                         <div class="quote">
                            <img src="img/icon/quote.png" class="img01" alt="">
                            <img src="img/icon/quote02.png" class="img02" alt="">
                         </div>
                      </div>
-                     <p class="feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus,
-                        voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                     <p class="feedback">Team not only provides extremely helpful chatbot features but also goes above
+                        and
+                        beyond to improve the user experience. </p>
                   </div>
                   <div class="testimonial-box">
                      <div class="top-part">
@@ -740,16 +745,16 @@
                            <img src="img/client-2.jpg" alt="">
                         </div>
                         <div class="txt">
-                           <p>SAMANTHA AKKINENI</p>
-                           <span>MANAGING DIRECTOR</span>
+                           <p>Andrew Yaroshevsky</p>
+                           <span>Chatfuel</span>
                         </div>
                         <div class="quote">
                            <img src="img/icon/quote.png" class="img01" alt="">
                            <img src="img/icon/quote02.png" class="img02" alt="">
                         </div>
                      </div>
-                     <p class="feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus,
-                        voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                     <p class="feedback">Team is very excellent. They have established top expertise
+                        for developing chatbots on our platform. Thank you. </p>
                   </div>
                </div>
             </div>
@@ -883,8 +888,10 @@
    <script src="js/jquery.waypoints.min.js"></script>
    <!-- OWL CAROUSEL Plugin -->
    <script src="js/owl.carousel.min.js"></script>
-   <script src="js/preloader.js"></script>
+   <script src="js/aibackground.js"></script>
+   <script src="js/aboutSection.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/preloader.js"></script>
    <script>
 
 

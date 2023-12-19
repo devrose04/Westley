@@ -101,7 +101,7 @@ $(document).ready(function () {
          },
          768: {
             items: 2
-         }
+         },
       }
    });
 

@@ -172,6 +172,10 @@ i {
   border: 1px solid #fb383b;
 }
 
+#navigration{
+  color: #000;
+}
+
 #navigration .logo {
   font-size: 38px;
   font-weight: bold;
@@ -371,15 +375,18 @@ i {
   transition: .4s;
 }
 
-#homeSection {
+/* #homeSection {
   position: relative;
-}
+} */
 
 #homeSection .slider-box {
-  /* background: url(../img/home-bg.png);
+  background: url(../img/top-bg.png);
   background-size: cover;
-  background-position: center top; */
+  background-position: center center;
+  /* background-size: 100% 100%; */
   height: 100vh;
+  /* animation: toppagefadeInAnimation 8s infinite alternate;
+  overflow: hidden; */
 }
 
 #homeSection .slider-box .txt-box {
@@ -408,26 +415,41 @@ i {
 }
 
 
-/* #homeSection .slider-box2 {
-  background: url(../img/home-bg01.png);
+#homeSection .slider-box2 {
+  background: url(../img/top-bg1.jpg);
   background-size: cover;
   background-position: center center;
+  animation: toppagefadeInAnimation 4s infinite alternate;
+  overflow: hidden;
 }
 
 #homeSection .slider-box3 {
-  background: url(../img/home-bg02.png);
+  background: url(../img/top-bg2.jpg);
   background-size: cover;
   background-position: center center;
+  animation: toppagefadeInAnimation 4s infinite alternate;
+  overflow: hidden;
 }
 
 #homeSection .slider-box4 {
-  background: url(../img/home-bg03.png);
+  background: url(../img/top-bg3.jpg);
   background-size: cover;
   background-position: center center;
-} */
+  animation: toppagefadeInAnimation 4s infinite alternate;
+  overflow: hidden;
+}
+
+@keyframes toppagefadeInAnimation {
+  0% {
+    background-size: 100% auto;
+  }
+  100% {
+    background-size: 110% auto;
+  }
+}
 
 #homeSection .owl-carousel {
-  position: absolute;
+  /* position: absolute; */
   z-index: 0;
   top: 0;
 }
@@ -488,10 +510,7 @@ i {
 #aboutSection {
   text-align: center;
   padding-bottom: 150px;
-  /* background: linear-gradient(to right, #66fffc, #00ff6e); */
-  /* background: linear-gradient(to right, #00fffb, #ff3dc2); */
-  /* background: linear-gradient(to right, #ffc3a0, #ffafbd); */
-  /* background: linear-gradient(to bottom, #ec77ab, #7873f5); */
+  position: relative;
 }
 
 #aboutSection .heading {
@@ -679,8 +698,11 @@ i {
 /* aiSection */
 
 #aiSection {
+  position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 100px;
+  width: 100%;
+  /* background-image: linear-gradient(to bottom right, #a0fff9 0%, #9bffb5 100%); */
 }
 
 #aiSection .heading {
@@ -731,6 +753,10 @@ i {
   border-radius: 20px;
 }
 
+#aiSection .item4{
+  margin-bottom: 0;
+}
+
 /* BlockchainSection */
 
 #blockchainSection {
@@ -740,7 +766,6 @@ i {
   background-size: cover;
   background-attachment: fixed;
   min-height: 35vh;
-  margin-bottom: 100px;
 }
 
 #blockchainSection .heading {
@@ -785,7 +810,7 @@ i {
 }
 
 #blockchainSection .blockchain1 {
-  background-image: url(../img/blockchain-1.jpg);
+  background-image: url(../img/blockchain-1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -891,21 +916,21 @@ i {
 }
 
 #blockchainSection .blockchain2 {
-  background-image: url(../img/blockchain-2.jpg);
+  background-image: url(../img/blockchain-2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #blockchainSection .blockchain3 {
-  background-image: url(../img/blockchain-3.jpg);
+  background-image: url(../img/blockchain-3.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #blockchainSection .blockchain4 {
-  background-image: url(../img/blockchain-4.jpg);
+  background-image: url(../img/blockchain-4.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -922,7 +947,18 @@ i {
 }
 
 #portfolioSection {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+#portfolioSection .row{
+  padding-top: 100px;
+}
+
+#portfolioSection #portfolio {
+  margin-bottom: 0!important;
+}
+
+#portfolioSection #portfolio .row{
+  padding-top: 0px!important;
 }
 
 #portfolioSection .sec-header h2 {
