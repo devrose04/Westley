@@ -172,7 +172,7 @@ i {
   border: 1px solid #fb383b;
 }
 
-#navigration{
+#navigration {
   color: #000;
 }
 
@@ -443,6 +443,7 @@ i {
   0% {
     background-size: 100% auto;
   }
+
   100% {
     background-size: 110% auto;
   }
@@ -753,7 +754,7 @@ i {
   border-radius: 20px;
 }
 
-#aiSection .item4{
+#aiSection .item4 {
   margin-bottom: 0;
 }
 
@@ -946,19 +947,269 @@ i {
   }
 }
 
+#digitalMarketing {
+  text-align: center;
+  background-image: url(../img/digital_1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: white; */
+  min-height: 35vh;
+}
+
+#digitalMarketing .heading {
+  margin: 2rem;
+  padding-top: 6rem;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: black;
+  position: relative;
+  letter-spacing: .2rem;
+}
+
+#digitalMarketing .heading::before {
+  top: 5.8rem;
+  left: -2rem;
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top: 0.4rem solid #16e0b4;
+  border-left: 0.4rem solid #16e0b4;
+}
+
+#digitalMarketing .heading::after {
+  bottom: -0.5rem;
+  right: -2rem;
+  transform: rotate(180deg);
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top: 0.4rem solid #16e0b4;
+  border-left: 0.4rem solid #16e0b4;
+}
+
+#digitalMarketing .row {
+  line-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#digitalMarketing .container .row .title-box {
+  background-color: white;
+  border-radius: 2%;
+  padding: 10px;
+  position: relative;
+  border-radius: 7px;
+  margin-bottom: 100px;
+  transition: all 0.8s ease-in-out;
+}
+
+#digitalMarketing .container .row .title-box::before,
+#digitalMarketing .container .row .title-box::after {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 2em;
+  height: 2em;
+  transition: all 0.8s ease-in-out;
+  border-color: #ffffff;
+  z-index: 1;
+}
+
+#digitalMarketing .container .row .title-box::after {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+}
+
+
+
+
+#digitalMarketing .container .row .title-box::before {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+#digitalMarketing .container .row .title-box:hover::before,
+#digitalMarketing .container .row .title-box:hover::after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-radius: 7px;
+}
+
+#digitalMarketing .container .row .col-lg-4 .title-box:hover {
+  background-image: linear-gradient(to bottom right, #66ffcc 0%, #ffccff 100%)!important;
+  color: #08adee !important;
+
+  h4 {
+    color: #2b1cfc !important;
+  }
+}
+
+#digitalMarketing .blockchain1 {
+  background-image: url(../img/blockchain-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+#digitalMarketing .blockchain1:hover {
+  background-size: cover;
+  animation: widthfadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes widthfadeInAnimation {
+  0% {
+    background-size: 100%;
+  }
+
+  100% {
+    background-size: 130%;
+  }
+}
+
+#digitalMarketing .img-box {
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+  color: #fff;
+  align-items: start;
+}
+
+#digitalMarketing .img-space {
+  margin-bottom: 100px;
+  height: 350px;
+}
+
+#digitalMarketing .img-box .letter {
+  background-color: #000;
+  opacity: 0.8;
+  text-align: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#digitalMarketing .img-box h1 {
+  padding: 10px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#digitalMarketing .img-box .fir-title {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+#digitalMarketing .img-box p {
+  font-size: 1.2rem;
+  line-height: 1;
+  display: none;
+}
+
+#digitalMarketing .img-box .fir-description {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#digitalMarketing .img-box:hover {
+  background-size: 130%;
+  cursor: pointer;
+  animation: widthfadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  .letter {
+    padding: 20px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  p {
+    display: block;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#digitalMarketing .blockchain2 {
+  background-image: url(../img/blockchain-2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#digitalMarketing .blockchain3 {
+  background-image: url(../img/blockchain-3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#digitalMarketing .blockchain4 {
+  background-image: url(../img/blockchain-4.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes widthfadeInAnimation {
+  0% {
+    background-size: 100%;
+  }
+
+  100% {
+    background-size: 130%;
+  }
+}
+
+#staffing .background{
+  background-image: url(../img/staffing.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 #portfolioSection {
   padding-bottom: 100px;
 }
-#portfolioSection .row{
+
+#portfolioSection .row {
   padding-top: 100px;
 }
 
 #portfolioSection #portfolio {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
-#portfolioSection #portfolio .row{
-  padding-top: 0px!important;
+#portfolioSection #portfolio .row {
+  padding-top: 0px !important;
 }
 
 #portfolioSection .sec-header h2 {
