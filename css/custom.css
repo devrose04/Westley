@@ -510,7 +510,7 @@ i {
 
 #aboutSection {
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   position: relative;
 }
 
@@ -1606,7 +1606,7 @@ i {
 #contactArea .contact-box {
   background: rgba(207, 207, 207, 0.3);
   border-radius: 10px;
-  padding: 80px;
+  padding: 60px;
   position: relative;
   transform: translateY(80px);
   z-index: 1;
