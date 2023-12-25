@@ -383,8 +383,9 @@ i {
   background: url(../img/top-bg.png);
   background-size: cover;
   background-position: center center;
-  /* background-size: 100% 100%; */
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 100%; */
   /* animation: toppagefadeInAnimation 8s infinite alternate;
   overflow: hidden; */
 }
@@ -418,7 +419,8 @@ i {
 #homeSection .slider-box2 {
   background: url(../img/top-bg1.jpg);
   background-size: cover;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: top center;
   animation: toppagefadeInAnimation 4s infinite alternate;
   overflow: hidden;
 }
@@ -426,20 +428,22 @@ i {
 #homeSection .slider-box3 {
   background: url(../img/top-bg2.jpg);
   background-size: cover;
-  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: top center;
   animation: toppagefadeInAnimation 4s infinite alternate;
   overflow: hidden;
 }
 
 #homeSection .slider-box4 {
   background: url(../img/top-bg3.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   animation: toppagefadeInAnimation 4s infinite alternate;
   overflow: hidden;
 }
 
-@keyframes toppagefadeInAnimation {
+/* @keyframes toppagefadeInAnimation {
   0% {
     background-size: 100% auto;
   }
@@ -447,7 +451,7 @@ i {
   100% {
     background-size: 110% auto;
   }
-}
+} */
 
 #homeSection .owl-carousel {
   /* position: absolute; */
@@ -744,7 +748,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
   margin: 0;
 }
 
@@ -2154,6 +2158,9 @@ i {
   #serviceSection .item p {
     font-size: 0.9rem;
   }
+  #blockchainSection .blockchain1 {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 585px) {
@@ -2179,15 +2186,20 @@ i {
   }
 
   #navigration .logo {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #navigration .logo img{
+    height: 30px !important;
   }
 
   h2 {
     font-size: 50px !important;
   }
-
+  #navigration .nav-item .dropdown-menus .dropdown-item span{
+    font-size: 15px;
+  }
   #homeSection .txt-area h1 {
-    font-size: 50px !important;
+    font-size: 40px !important;
   }
 
   #aboutSection h3 {
@@ -2198,7 +2210,8 @@ i {
     font-size: 3rem;
   }
 
-  /* #serviceSection .item h6{
-    font-size: 2.2rem;
-  } */
+  #staffing .title-box span{
+    text-align: center;
+    font-size: 40px!important;
+  }
 }

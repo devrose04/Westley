@@ -47,9 +47,9 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #fffeff;
+    background: rgb(36, 204, 204);
     animation: animate 1s linear infinite;
-    animation-delay: calc(0.01s * var(--i));
+    animation-delay: calc(0.005s * var(--i));
 
 }
 
