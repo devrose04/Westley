@@ -384,8 +384,7 @@ i {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  /* height: 100%; */
+  height: 100%;
   /* animation: toppagefadeInAnimation 8s infinite alternate;
   overflow: hidden; */
 }
@@ -420,7 +419,7 @@ i {
   background: url(../img/top-bg1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   animation: toppagefadeInAnimation 4s infinite alternate;
   overflow: hidden;
 }
@@ -429,7 +428,7 @@ i {
   background: url(../img/top-bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center center;
   animation: toppagefadeInAnimation 4s infinite alternate;
   overflow: hidden;
 }
@@ -438,7 +437,7 @@ i {
   background: url(../img/top-bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   animation: toppagefadeInAnimation 4s infinite alternate;
   overflow: hidden;
 }
@@ -816,7 +815,7 @@ i {
 
 #blockchainSection .blockchain1 {
   background-image: url(../img/blockchain-1.png);
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -2160,6 +2159,9 @@ i {
   }
   #blockchainSection .blockchain1 {
     margin-bottom: 100px;
+  }
+  #testimonialSection .owl-dots{
+    display: none;
   }
 }
 
